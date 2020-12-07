@@ -36,3 +36,15 @@ def tablaMultiplicar(numero):
 
 tabla = int(input("De qué numero quieres la tabla?: "))
 tablaMultiplicar(tabla)
+
+#ejemplo 3, parametros opcionales
+print("\nEJEMPLO 3")
+
+def getEmpleado(nombre, dni = None):#el parametro opcional es dni
+    print("EMPLEADO")
+    print(f"Nombre: {nombre}")
+    print(f"DNI: {dni}")
+
+getEmpleado("Ismael","12345")
+
+getEmpleado("Victor")#no paso el segundo parametro pero aun así la funcion funciona xD
