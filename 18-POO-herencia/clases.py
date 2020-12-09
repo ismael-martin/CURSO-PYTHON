@@ -1,11 +1,11 @@
 #HERENCIA es la posibilidad de compartir atributos y metodos entre clases relacionadas
 
 class Persona:#clase padre
-    """def __init__(self, nombre, apellidos, edad, altura):
+    def __init__(self, nombre, apellidos, edad, altura):
         self.nombre = nombre
         self.apellidos = apellidos
         self.edad = edad
-        self.altura = altura"""
+        self.altura = altura
     
     def getNombre(self):
         return self.nombre
@@ -41,5 +41,23 @@ class Persona:#clase padre
         return "Estoy durmiendo"
 
 class Informatico(Persona): #clase hijo
-    def __init__(self):
-        
+    """
+    lenguajes
+    experiencia
+    """
+    def __init__(self,nombre,apellidos,edad,altura):#si uso super aqui necesito que me pasen los atributos para mandarlos al constructor padre
+        super().__init__(nombre,apellidos,edad,altura) #super hace la llamada al constructor de la clase padre para que se ejecute al crear un objeto hijo
+        self.lenguajes = ["HTML","CSS","JavaScript","PHP"]
+        self.experiencia = 5
+    
+    def getLenguajes(self):
+        return self.lenguajes
+    
+    def setLenguajes(self, lenguaje):
+        self.lenguajes.append(lenguaje)
+    
+    def programar(self):
+        return "Estoy programando"
+
+    def repararPC(self):
+        return "Estoy reparando un PC"
