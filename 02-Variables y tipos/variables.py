@@ -1,10 +1,10 @@
 #pruebas con variables
 
 #creación de variables y asignación de valores
-texto = "Master en Python"
+texto = "Codigo en Python"
 print(texto)
 
-texto2 = "con Victor Robles"
+texto2 = "con Ismael Martin"
 print(texto2)
 
 numero = 45

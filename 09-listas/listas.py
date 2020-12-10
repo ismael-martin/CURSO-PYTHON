@@ -16,13 +16,13 @@ las tuplas son listas pero con elementos NO MODIFICABLES
 years = list(range(2020,2039))
 variada = ['Isma', 99, 4.5, True]
 
-"""
+
 print(pelicula)
 print(peliculas)
 print(cantantes)
 print(years)
 print(variada)
-"""
+
 
 #indices de las listas
 print(peliculas[1]) #accedo al indice 1 de la lista peliculas
@@ -68,7 +68,7 @@ contactos = [
     ],
     [
         'Felipe',
-        'erfeli_69@sexo.com'
+        'erfeli_1993@dominio.com'
     ]
 ]
 

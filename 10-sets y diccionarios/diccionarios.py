@@ -7,7 +7,7 @@ Parecido a un array asociativo
 persona = {
     "nombre": "Ismael",
     "apellidos": "Martín Gómez",
-    "web": "www.pornhub.com"
+    "web": "www.getbrit.com"
 }
 
 print(persona)
@@ -26,7 +26,7 @@ contactos = [
     },
     {
         'nombre': 'Rubiuh',
-        'email': 'flechipolla@isma.com'
+        'email': 'correo@isma.com'
     }
 ]
 
