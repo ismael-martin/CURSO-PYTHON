@@ -32,7 +32,7 @@ else:
 print("########### EJEMPLO 3 ############")
 
 #ifs anidados
-"""
+
 nombre = input("Dime tu nombre: ")
 ciudad = input("Dime tu ciudad: ")
 continente = input("Dime tu continente: ")
@@ -47,7 +47,7 @@ if edad >= MAYORIA_EDAD:
         print(f"El usuario es europeo, vive en {ciudad}")
 else:
     print(f"{nombre} no es mayor de edad")
-"""
+
 
 print("########### EJEMPLO 4 ############")
 #else if --> elif
@@ -79,7 +79,7 @@ or significa O
 ! significa negación
 not significa NO
 """
-EDAD_MINIMA = 18
+EDAD_MINIMA = 18 #Estas variables las declaro en mayusculas porque son CONSTANTES
 EDAD_MAXIMA = 65
 edad = 0#int(input("Introduce la edad: "))
 

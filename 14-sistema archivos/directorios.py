@@ -13,9 +13,9 @@ else:
     print("La carpeta ya no existe")
 
 #copiar carpeta
-"""rutaRelativa = "./14-sistema archivos/mi_carpeta"
+rutaRelativa = "./14-sistema archivos/mi_carpeta"
 rutaNueva = "./14-sistema archivos/mi_carpeta_COPIADA"
-shutil.copytree(rutaRelativa, rutaNueva)"""
+shutil.copytree(rutaRelativa, rutaNueva)
 
 #mostrar contenido de la carpeta
 contenido = os.listdir("./14-sistema archivos/mi_carpeta")

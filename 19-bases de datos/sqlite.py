@@ -53,8 +53,8 @@ conexion.commit()
 registros = [
     ("Ordenador portátil", "Buen PC", 700),
     ("Telefono móvil", "Buen Movil", 850),
-    ("Tostadora mierder", "Buena Tostadora", 20),
-    ("Pedrolo inutil", "Buena Piedra", 0),
+    ("Tostadora rota", "Buena Tostadora", 20),
+    ("Pedrusco inutil", "Buena Piedra", 0),
 ]
 cursor.executemany("insert into productos values (null,?,?,?)",registros)
 conexion.commit()
