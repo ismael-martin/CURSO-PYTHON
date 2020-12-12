@@ -6,21 +6,30 @@ PROYECTO PYTHON + MYSQL
 -Login identifica al usuario y nos pregunta:
 -Crear nota, mostrar notas, borrar notas
 """
+from usuarios import acciones
 #un print con triple comilla me permite sacar por pantalla texto con saltos de linea
-print("""
-BIENVENIDO!
-¿Qué deseas hacer?:
-    - Registrarte? (registro o 1)
-    - Acceder? (login o 2)
-""")
+def inicio():
 
-accion = input(">")
+    print("""
+    BIENVENIDO!
+    ¿Qué deseas hacer?:
+        - Registrarte? (registro o 1)
+        - Acceder? (login o 2)
+    """)
 
-if accion == "registro" or accion == "1":
-    print("\nOK! Vamos a registrarte en el sistema...")
-    nombre = input("Nombre*: ")
-    apellidos = input("Apellidos*: ")
-    email = input("Email*: ")
-    contraseña = input("Contraseña*: ")
-elif accion == "login" or "2":
-    print("\nIdentificate: ")
+    accion = input(">")
+    hazEl = acciones.Acciones()
+
+    if accion == "registro" or accion == "1":
+        hazEl.registro()
+        hazEl.login()
+
+
+    elif accion == "login" or accion == "2":
+        hazEl.login()
+
+    else: 
+        print("comando desconocido")
+        inicio()
+
+inicio()
