@@ -8,7 +8,7 @@ database = mysql.connector.connect(
     database = "python"
 )
 
-##La conexion es correcta??
+##La conexion es correcta???
 #print(database) para comprobarlo
 
 #crear cursor para ejecutar consultas
