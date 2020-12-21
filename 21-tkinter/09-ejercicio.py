@@ -41,10 +41,7 @@ def getNumeros(num1, num2, accion):
             elif accion == "dividir":
                 divi(input1.get(),input2.get())
     except:
-        messagebox.showerror("Error", "Los datos que has introducido no son correctos, por favor introduce enteros")
-    
-    
-        
+        messagebox.showerror("Error", "Los datos que has introducido no son correctos, por favor introduce enteros")  
 
 
 def salir():
