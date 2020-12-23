@@ -25,22 +25,23 @@ def divi(num1, num2):
     messagebox.showinfo("DIVISIÓN", f"La división de {num1} entre {num2} es {num1/num2}")
 
 def getNumeros(num1, num2, accion):
-    input1 = IntVar()
-    input2 = IntVar()
-    input1.set(num1.get())
-    input2.set(num2.get())
-
-    
-    if input1.get() >= 0 and input2.get() >= 0:
-        if accion == "sumar":
-            suma(input1.get(),input2.get())
-        elif accion == "restar":
-            resta(input1.get(),input2.get())
-        elif accion == "multiplicar":
-            multi(input1.get(),input2.get())
-        elif accion == "dividir":
-            divi(input1.get(),input2.get())
+    try:    
+        input1 = IntVar()
+        input2 = IntVar()
+        input1.set(num1.get())
+        input2.set(num2.get())
         
+        if input1.get() >= 0 and input2.get() >= 0:
+            if accion == "sumar":
+                suma(input1.get(),input2.get())
+            elif accion == "restar":
+                resta(input1.get(),input2.get())
+            elif accion == "multiplicar":
+                multi(input1.get(),input2.get())
+            elif accion == "dividir":
+                divi(input1.get(),input2.get())
+    except:
+        messagebox.showerror("Error", "Los datos que has introducido no son correctos, por favor introduce enteros")  
 
 
 def salir():
