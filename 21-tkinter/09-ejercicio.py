@@ -45,7 +45,7 @@ def getNumeros(num1, num2, accion):
 
 
 def salir():
-    resultado = messagebox.askquestion("Salir", "Estas sseguro?")
+    resultado = messagebox.askquestion("Salir", "Estas seguro?")
     if resultado == "yes":
         calc.destroy()
 
