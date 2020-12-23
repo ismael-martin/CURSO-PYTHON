@@ -31,7 +31,7 @@ def getNumeros(num1, num2, accion):
     input2.set(num2.get())
 
     
-    if input1.get() >= 1 and input2.get() >= 1:
+    if input1.get() >= 0 and input2.get() >= 0:
         if accion == "sumar":
             suma(input1.get(),input2.get())
         elif accion == "restar":
