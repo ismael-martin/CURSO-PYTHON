@@ -9,6 +9,7 @@ from tkinter import *
 from tkinter import messagebox as messagebox
 
 calc = Tk()
+calc.title("Calculadora Básica")
 calc.geometry("300x400")
 
 ##Genero las funciones de la calculadora
