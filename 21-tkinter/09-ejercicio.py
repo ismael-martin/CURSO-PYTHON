@@ -10,7 +10,8 @@ from tkinter import messagebox as messagebox
 
 calc = Tk()
 calc.title("Calculadora Básica")
-calc.geometry("300x400")
+calc.geometry("350x300")
+calc.resizable(0,0)
 
 ##Genero las funciones de la calculadora
 def suma(num1, num2):
@@ -60,14 +61,22 @@ encabezado.config(
     padx=10,
     pady=10
 )
-encabezado.grid(row=0,column=0, columnspan=15, sticky=N)
+encabezado.grid(row=0,column=0, columnspan=12, sticky=N)
 
+#meto todo el contenido del formulario y los botones dentro del frame marco
+marco = Frame(calc, width=250, height=250)
+marco.config(
+    padx=15,
+    pady=15,
+
+)
+marco.grid(row=1,column=0)
 #label para el campo (NUM1)
-label = Label(calc, text="Primer numero")
+label = Label(marco, text="Primer numero")
 label.grid(row=1, column=0, padx=5, pady=5, sticky=W)
 
 #campo de texto (NUM1)
-campoTexto = Entry(calc, textvariable = numero1)
+campoTexto = Entry(marco, textvariable = numero1)
 campoTexto.config(
     width=20,
     justify=RIGHT,
@@ -76,25 +85,25 @@ campoTexto.config(
 campoTexto.grid(row=1, column=1 ,padx=5, pady=5)
 
 #label para el campo (NUM2)
-label = Label(calc, text="Segundo numero")
+label = Label(marco, text="Segundo numero")
 label.grid(row=2, column=0, padx=5, pady=5, sticky=W)
 
 #campo de texto (NUM2)
-campoTexto = Entry(calc, textvariable = numero2)
+campoTexto = Entry(marco, textvariable = numero2)
 campoTexto.config(
     width=20,
     justify=RIGHT,
     state=NORMAL
 )
-campoTexto.grid(row=2, column=1 ,padx=5, pady=5)
+campoTexto.grid(row=2, column=1 ,padx=5, pady=5) 
 
 
-Button(calc, text="SUMAR", command=lambda:getNumeros(numero1,numero2,"sumar")).grid(row=3,column=0)
-Button(calc, text="RESTAR", command=lambda:getNumeros(numero1,numero2,"restar")).grid(row=3,column=1)
-Button(calc, text="MULTIPLICAR", command=lambda:getNumeros(numero1,numero2,"multiplicar")).grid(row=4,column=0)
-Button(calc, text="DIVIDIR", command=lambda:getNumeros(numero1,numero2,"dividir")).grid(row=4,column=1)
-Label(calc).grid(row=5,column=0)
-Button(calc, text="Salir", command=salir).grid(row=6,column=0,sticky=N)
+Button(marco, text="SUMAR", command=lambda:getNumeros(numero1,numero2,"sumar")).grid(row=3,column=0)
+Button(marco, text="RESTAR", command=lambda:getNumeros(numero1,numero2,"restar")).grid(row=3,column=1)
+Button(marco, text="MULTIPLICAR", command=lambda:getNumeros(numero1,numero2,"multiplicar")).grid(row=4,column=0)
+Button(marco, text="DIVIDIR", command=lambda:getNumeros(numero1,numero2,"dividir")).grid(row=4,column=1)
+Label(marco).grid(row=5,column=0)
+Button(marco, text="Salir", command=salir).grid(row=6,column=0,sticky=N)
 
 
 calc.mainloop()
