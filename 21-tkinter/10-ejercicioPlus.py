@@ -31,7 +31,7 @@ class Calculadora():
             self.num1 = num1.get()
             self.num2 = num2.get()
                       
-            if self.num1 >= 0 and self.num2 >= 0:
+            if isinstance(self.num1, int) and isinstance(self.num2, int):
                 if accion == "sumar":
                     self.suma(self.num1, self.num2)
                 elif accion == "restar":
