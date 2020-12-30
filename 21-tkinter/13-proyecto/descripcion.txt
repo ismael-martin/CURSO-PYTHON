@@ -1,8 +1,0 @@
-CREAR UN PROGRAMA QUE TENGA:
-    - ventana de tamaño fijo no redimensionable
-    - un menu
-    - diferentes pantallas
-    - formulario de añadir productos
-    - guardar datos temporalmente
-    - mostrar datos listados en la home
-    - opcion de salir
