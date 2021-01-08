@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi App con Django</title>
+</head>
+
+<body>
+
+    <h1>
+        {% block title %}
+
+        {% endblock %} | Ismael Martín</h1>
+    <hr>
+    <ul>
+        <li><a href="/inicio">Inicio</a></li>
+        <li><a href="/hola-mundo">Hola mundo</a></li>
+        <li><a href="/pagina">Pagina de prueba</a></li>
+        <li><a href="/contacto">Contacto</a></li>
+    </ul>
+    <hr>
+    <div id="content">
+        {% block content %}
+        <!-- codigo que viene de las templates -->
+        {% endblock %}
+    </div>
+    <footer>Master en Python &copy; | Ismael Martín</footer>
+</body>
+
+</html>
